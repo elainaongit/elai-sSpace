@@ -31,9 +31,9 @@ socialMedia.forEach(div => {
             window.location.href='https://www.steamcommunity.com/id/3lainawa'
         } else if (div.id == 'facebook') {
             window.location.href='https://www.facebook.com/profile.php?id=100014623566775'
-        } else if (div.id == 'stackOverFloat') {
+        } else if (div.id == 'stackOverFlow') {
             window.location.href='https://stackoverflow.com/users/16432325/elainastackoverfloat'
-        } 
+        }
     })
 })
 
