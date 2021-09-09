@@ -1,25 +1,14 @@
 const socialMedia = document.querySelectorAll('.container')
-const discord = document.getElementById('discord')
 
 const dropDownNav = document.querySelector('.dropdownNav')
 const navBar = document.querySelector('.navBar')
 const jump = document.querySelector('.jump')
 
-discord.onclick = function() {
-    document.execCommand('copy')
-}
-
-discord.addEventListener("copy", function(event) {
-    event.preventDefault();
-    if (event.clipboardData) {
-      event.clipboardData.setData("text/plain", '3laina#3591');
-      console.log(event.clipboardData.getData("text"))
-    }
-});
-
 socialMedia.forEach(div => {
     div.addEventListener("click", () => {
         if(div.id == 'discord') {
+            //copy to clipboard
+            navigator.clipboard.writeText('3laina#3591')
             let copyAlert = document.getElementById('alert')
             copyAlert.style.display = 'block'
             setTimeout(function(){ 
@@ -32,7 +21,7 @@ socialMedia.forEach(div => {
         } else if (div.id == 'facebook') {
             window.location.href='https://www.facebook.com/profile.php?id=100014623566775'
         } else if (div.id == 'stackOverFlow') {
-            window.location.href='https://stackoverflow.com/users/16432325/elainastackoverfloat'
+            window.location.href='https://stackoverflow.com/users/16432325/elainastackoverflow'
         }
     })
 })
